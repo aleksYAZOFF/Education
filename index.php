@@ -1,4 +1,6 @@
 <?php
+
+//Глава 2!
 	$burger = 4.95;//x2
 	$cocktail = 1.95;
 	$drink = 0.85;
@@ -47,5 +49,25 @@
 	print('Степень: '.($stepen**2).'<br>');
 	print('Степень: '.($stepen**3).'<br>');
 	print('Степень: '.($stepen**4).'<br>');
-	print('Степень: '.($stepen**5).'<br>');
+	print('Степень: '.($stepen**5).'<br><br>');
+
+
+	//Глава 3!
+
+	$graduses = -50;
+
+	while($graduses <= 50){
+		print("Градусов по фарингейту: $graduses --->");
+		printf('Градусы по Цильсию: %.2f',(($graduses-32)*5)/9);
+		print('<br>');
+		$graduses++;
+	}
+
+	print '<br><br>';
+
+	for ($gradus=-50; $gradus <= 50 ; $gradus++) { 
+		print("Градусов по фарингейту: $gradus --->");
+		printf('Градусы по Цильсию: %.2f',(($gradus-32)*5)/9);
+		print('<br>');
+	}
 ?>
